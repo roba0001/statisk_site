@@ -1,3 +1,10 @@
+/* -----------------GENERELT----------------- */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 a {
   color: inherit;
   text-decoration: underline;
@@ -14,8 +21,10 @@ a {
   text-underline-offset: 2px;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
+/* ---------------------------------------------- */
+
+/* -----------------PRODUKTLISTE----------------- */
+.productlist article.soldOut img {
+  opacity: 0.5;
 }
+/* ---------------------------------------------- */
