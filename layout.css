@@ -13,16 +13,32 @@
 /* -------------------------------- */
 
 /* -----------------PRODUKTLISTE----------------- */
+.productlist main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+  gap: 2rem;
+}
+
 .productlist article {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }
 
+/* on sale */
+.productlist article.onSale .discounted {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* sold out */
 .productlist article.soldOut .soldOut_img::before {
   content: "Sold Out";
   position: absolute;
-  background: black;
-  color: wheat;
+  background: rgb(4, 4, 4);
+  color: rgb(249, 165, 7);
+  padding: 5px;
+  opacity: 1;
 }
+
 /* ---------------------------------------------- */

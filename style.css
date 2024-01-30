@@ -21,10 +21,30 @@ a {
   text-underline-offset: 2px;
 }
 
-/* ---------------------------------------------- */
+/* -----------------TEKST----------------- */
+.displaytxt {
+  text-decoration: none;
+  font-size: 500%;
+}
+
+.displaytxt span {
+  color: red;
+  font-weight: bolder;
+}
 
 /* -----------------PRODUKTLISTE----------------- */
 .productlist article.soldOut img {
   opacity: 0.5;
 }
+
+.subtle {
+  color: rgb(180, 179, 179);
+}
+
+/* on sale */
+.discounted p:last-child {
+  background: rgb(237, 31, 31);
+  padding: 5px;
+}
+
 /* ---------------------------------------------- */
