@@ -1,0 +1,21 @@
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+}
+
+.categorylist a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  background-color: orange;
+  border-radius: 10px;
+  text-underline-offset: 2px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

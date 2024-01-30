@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------KATEGORI----------- */
+.categorylist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+/* -------------------------------- */
+
+/* -----------------PRODUKTLISTE----------------- */
+.productlist article {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+/* ---------------------------------------------- */
