@@ -5,31 +5,73 @@ img {
   display: block;
 }
 
-a {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 2px;
-}
-
 .categorylist a {
   text-decoration: none;
   padding: 20px;
   color: white;
-  background-color: orange;
+  background-color: rgb(255, 55, 0);
   border-radius: 10px;
   text-underline-offset: 2px;
 }
 
-/* -----------------TEKST----------------- */
-.displaytxt {
-  text-decoration: none;
-  font-size: 500%;
+.categorylist a:hover {
+  color: black;
 }
 
-.displaytxt span {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.indexlinks a,
+nav a {
+  text-decoration: underline;
+  text-decoration-color: rgb(24, 23, 23);
+}
+.indexlinks a:hover,
+nav a:hover {
+  text-decoration-color: red;
+  color: red;
+}
+
+article a {
+  color: rgb(180, 179, 179);
+  text-decoration: underline;
+}
+article a:hover {
+  color: black;
+}
+
+/* -----------------TEKST----------------- */
+h1 {
+  text-decoration: none;
+  font-size: 500%;
+  letter-spacing: -0.1rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+h1 span {
   color: red;
   font-weight: bolder;
+  display: inline-block;
+  transform: scaleX(-1) translateX(-0.2rem);
+}
+
+h2 {
+  font-size: 2.441rem;
+  letter-spacing: -0.12rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+html {
+  font-size: calc(18px + ((100vw - 600px) / 250));
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
 }
 
 /* -----------------PRODUKTLISTE----------------- */

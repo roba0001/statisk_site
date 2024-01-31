@@ -4,19 +4,36 @@
   padding: 0;
 }
 
+/* -----------INDEX----------- */
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* -----------KATEGORI----------- */
+
 .categorylist {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-/* -------------------------------- */
+
+@media screen and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 /* -----------------PRODUKTLISTE----------------- */
-.productlist main {
+
+.grid_produktliste {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
   gap: 2rem;
+}
+
+.grid_produktliste article {
 }
 
 .productlist article {
@@ -41,4 +58,13 @@
   opacity: 1;
 }
 
-/* ---------------------------------------------- */
+/* -----------------PRODUKT----------------- */
+ol {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  ol {
+    display: block;
+  }
+}
