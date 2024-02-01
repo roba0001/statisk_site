@@ -5,41 +5,9 @@ img {
   display: block;
 }
 
-.categorylist a {
-  text-decoration: none;
-  padding: 20px;
-  color: white;
-  background-color: rgb(255, 55, 0);
-  border-radius: 10px;
-  text-underline-offset: 2px;
-}
-
-.categorylist a:hover {
-  color: black;
-}
-
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.indexlinks a,
-nav a {
-  text-decoration: underline;
-  text-decoration-color: rgb(24, 23, 23);
-}
-.indexlinks a:hover,
-nav a:hover {
-  text-decoration-color: red;
-  color: red;
-}
-
-article a {
-  color: rgb(180, 179, 179);
-  text-decoration: underline;
-}
-article a:hover {
-  color: black;
 }
 
 /* -----------------TEKST----------------- */
@@ -69,9 +37,42 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 1.953rem;
+  letter-spacing: -0.02rem;
+  line-height: 1.2;
+}
+
 html {
   font-size: calc(18px + ((100vw - 600px) / 250));
   font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+
+/* -----------------INDEX----------------- */
+.indexlinks a,
+nav a {
+  text-decoration: underline;
+  text-decoration-color: rgb(24, 23, 23);
+}
+.indexlinks a:hover,
+nav a:hover {
+  text-decoration-color: red;
+  color: red;
+}
+
+/* -----------------KATEGORI----------------- */
+
+.categorylist a {
+  text-decoration: none;
+  padding: 2rem;
+  color: white;
+  background-color: rgb(255, 55, 0);
+  border-radius: 10px;
+  text-underline-offset: 2px;
+}
+
+.categorylist a:hover {
+  color: black;
 }
 
 /* -----------------PRODUKTLISTE----------------- */
@@ -87,6 +88,13 @@ html {
 .discounted p:last-child {
   background: rgb(237, 31, 31);
   padding: 5px;
+}
+
+article a {
+  color: rgb(255, 0, 0);
+}
+article a:hover {
+  text-decoration: underline;
 }
 
 /* ---------------------------------------------- */

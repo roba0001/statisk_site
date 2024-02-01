@@ -4,10 +4,13 @@
   padding: 0;
 }
 
+body {
+  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+}
+
 /* -----------INDEX----------- */
-nav {
-  display: flex;
-  justify-content: space-around;
+nav a {
+  margin: 0 10px;
 }
 
 /* -----------KATEGORI----------- */
@@ -34,6 +37,7 @@ nav {
 }
 
 .grid_produktliste article {
+  margin: 10px 30px;
 }
 
 .productlist article {
@@ -59,12 +63,78 @@ nav {
 }
 
 /* -----------------PRODUKT----------------- */
-ol {
-  display: none;
+
+.product main img {
+  grid-column: 1/-1;
+}
+
+.purchaseBox {
+  background: #d8d8d8;
+  color: var(--background-color);
+  padding: 1rem;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+}
+
+.purchaseBox form label {
+  gap: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid var(--input-border-color);
+  border-radius: 10px;
+  color: black;
+  height: 2.5rem;
+  background-color: white;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.purchaseBox button {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  border: 2px solid var(--input-border-color);
+  border-radius: 10px;
+  color: black;
+  height: 2.5rem;
+  background-color: white;
+}
+
+.purchaseBox button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+dt {
+  font-weight: 700;
+}
+dd {
+  margin-left: 1rem;
 }
 
 @media screen and (min-width: 800px) {
-  ol {
-    display: block;
+  .img_produkt {
+    width: 50%;
+    height: auto;
+  }
+  .purchaseBox {
+    order: 2;
+    transform: translate(-50px, -100px);
+    border-radius: 30px;
+    height: 50%;
+  }
+  .grid_produkt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
