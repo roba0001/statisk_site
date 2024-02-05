@@ -33,34 +33,10 @@ function showProduct(product) {
   } else {
     let discountDecimal = product.discount / 100;
     let discountPrice = product.price - product.price * discountDecimal;
-    copy.querySelector(".discountprice").textContent = `Now ${discountPrice},- DKK`;
-    copy.querySelector("span.prev").textContent = "Prev";
+    copy.querySelector(".discountprice").textContent = `Now ${Math.floor(discountPrice)},- DKK`;
+    // copy.querySelector("span").textContent = "Hello";
   }
 
   // appende
   document.querySelector(".grid_produktliste").appendChild(copy);
 }
-
-/* <article class="smallProduct">
-<img src="https://kea-alt-del.dk/t7/images/webp/640/1533.webp " alt="Cat Red T-shirt" />
-<h3>Cat Red T-shirt</h3>
-<p class="subtle">Tshirt - Puma</p>
-<p class="price">DKK 899,-</p>
-<a href="produkt.html"> Read More</a>
-</article> */
-
-// {
-//   "id": 1163,
-//   "gender": "Men",
-//   "category": "Apparel",
-//   "subcategory": "Topwear",
-//   "articletype": "Tshirts",
-//   "season": "Summer",
-//   "productionyear": 2011,
-//   "usagetype": "Sports",
-//   "productdisplayname": "Sahara Team India Fanwear Round Neck Jersey",
-//   "price": 895,
-//   "discount": null,
-//   "brandname": "Nike",
-//   "soldout": 0
-//

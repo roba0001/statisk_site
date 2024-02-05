@@ -52,14 +52,6 @@ nav a {
   justify-content: space-between;
 }
 
-/* .productlist article .discounted {
-  display: none;
-}
-
-.productlist article .price span {
-  display: none;
-} */
-
 /* sold out */
 .productlist article.soldOut .soldOut_img::before {
   content: "Sold Out";
