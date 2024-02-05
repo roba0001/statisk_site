@@ -20,17 +20,23 @@
     </header>
 
     <main>
-      <h2>Puma</h2>
+      <h2>Products</h2>
       <div class="grid_produktliste">
-        <article class="smallProduct">
-          <img src="https://kea-alt-del.dk/t7/images/webp/640/1533.webp " alt="Cat Red T-shirt" />
-          <h3>Cat Red T-shirt</h3>
-          <p class="subtle">Tshirt - Puma</p>
-          <p class="price">DKK 899,-</p>
-          <a href="produkt.html"> Read More</a>
-        </article>
+        <template id="smallProductTemplate">
+          <article class="smallProduct">
+            <img src="https://kea-alt-del.dk/t7/images/webp/640/1533.webp " alt="Cat Red T-shirt" />
+            <h3>Cat Red T-shirt</h3>
+            <p class="subtle">Tshirt - Puma</p>
+            <p class="price"><span>Prev.</span> DKK 1299,-</p>
+            <div class="discounted">
+              <p>Now DKK 650,-</p>
+              <p>-50%</p>
+            </div>
+            <a href="produkt.html"> Read More</a>
+          </article>
+        </template>
 
-        <article class="smallProduct onSale">
+        <!-- <article class="smallProduct onSale">
           <img class="big_img" src="https://kea-alt-del.dk/t7/images/webp/1000/1537.webp " alt="Red Net Jersey" />
           <h3>Red Net Jersey</h3>
           <p class="subtle">Tshirt - Puma</p>
@@ -64,10 +70,11 @@
             <p>-28%</p>
           </div>
           <a href="produkt.html"> Read More</a>
-        </article>
+        </article> -->
       </div>
     </main>
 
     <footer></footer>
+    <script src="productlist.js"></script>
   </body>
 </html>
