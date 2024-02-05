@@ -1,4 +1,4 @@
-copy.querySelector(".brands").setAttribute("href", `produkt.html?id=${product.id}`);
+copy.querySelector(".brands").setAttribute("href", `kategori.html?id=${product.id}`);
 
 const urlParams = new URLSearchParams(window.location.search);
 const brands = urlParams.get("brandname");
