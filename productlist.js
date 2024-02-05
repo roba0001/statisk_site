@@ -34,9 +34,10 @@ function showProduct(product) {
     let discountDecimal = product.discount / 100;
     let discountPrice = product.price - product.price * discountDecimal;
     copy.querySelector(".discountprice").textContent = `Now ${Math.floor(discountPrice)},- DKK`;
-    // copy.querySelector("span").textContent = "Hello";
+    // copy.querySelector(".price span").textContent = "Hello";
   }
 
+  copy.querySelector(".read_more").setAttribute("href", `produkt.html?id=${product.id}`);
   // appende
   document.querySelector(".grid_produktliste").appendChild(copy);
 }
