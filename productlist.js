@@ -26,13 +26,19 @@ function showProduct(product) {
     // produktet er udsolgt
     copy.querySelector("article").classList.add("soldOut");
   }
+
   if (product.discount === null) {
     // produktet er ikke on sale
-    console.log("her er der intet salg");
     copy.querySelector(".discountpr").classList.add("hide");
+  } else {
+    let discountDecimal = product.discount / 100;
+    let discountPrice = product.price - product.price * discountDecimal;
+    copy.querySelector(".discountprice").textContent = `Now ${discountPrice},- DKK`;
+    copy.querySelector("span.prev").textContent = "Prev";
   }
+
   // appende
-  document.querySelector("main").appendChild(copy);
+  document.querySelector(".grid_produktliste").appendChild(copy);
 }
 
 /* <article class="smallProduct">
@@ -57,4 +63,4 @@ function showProduct(product) {
 //   "discount": null,
 //   "brandname": "Nike",
 //   "soldout": 0
-// }
+//
