@@ -47,7 +47,7 @@ nav a {
 }
 
 /* on sale */
-.productlist article.onSale .discounted {
+.discounted {
   display: flex;
   justify-content: space-between;
 }
