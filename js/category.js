@@ -10,13 +10,12 @@ function showCategories(categories) {
 function showCategory(cat) {
   console.log(cat);
   // fang template
-  const template = document.querySelector("#txt_kategori").content;
+  const template = document.querySelector("#kategori_template").content;
   // lav en kopi
   const copy = template.cloneNode(true);
   // ændre indhold
   copy.querySelector("a").textContent = cat.category;
   copy.querySelector("a").setAttribute("href", `produktliste.html?category=${cat.category}`);
-  // vælg parent
-  // append (tilføj kopi til html)
-  document.querySelector("main").appendChild(copy);
+  // vælg parent og append (tilføj kopi til html)
+  document.querySelector(".categorylist").appendChild(copy);
 }

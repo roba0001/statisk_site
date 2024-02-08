@@ -70,7 +70,7 @@ nav a:hover {
 
 /* -----------------KATEGORI----------------- */
 
-.categorylist a {
+.kategori_a {
   text-decoration: none;
   padding: 2rem;
   color: white;
@@ -79,14 +79,13 @@ nav a:hover {
   text-underline-offset: 2px;
 }
 
-.categorylist a:hover {
+.kategori_a:hover {
   color: black;
 }
 
 /* -----------------PRODUKTLISTE----------------- */
 .productlist article.soldOut img {
   opacity: 0.3;
-  text-decoration: "Sold Out";
   padding: 5px;
 }
 
