@@ -8,7 +8,6 @@ function showProducts(products) {
 }
 
 function showProduct(product) {
-  console.log("product.discount:", product.discount);
   //fang template
   const template = document.querySelector("#smallProductTemplate").content;
   // lav en kopi
