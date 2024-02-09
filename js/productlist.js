@@ -24,9 +24,18 @@ function showProduct(product) {
   copy.querySelector("p.price").textContent = product.price + ",- DKK";
   copy.querySelector("p.discountpr").textContent = product.discount + " %";
 
-  if (product.soldout) {
+  // if (product.soldout) {
+  //   // produktet er udsolgt
+  //   copy.querySelector("article").classList.add("soldOut");
+  // }
+
+  if (product.soldout === 1) {
     // produktet er udsolgt
-    copy.querySelector("article").classList.add("soldOut");
+    copy.querySelector(".soldout_div").textContent = `Sold out`;
+    copy.querySelector(".soldout_div").classList.add("soldout_box");
+    copy.querySelector("img").classList.add("soldOut_img");
+  } else {
+    copy.querySelector(".soldout_div").classList.add("hide");
   }
 
   if (product.discount === null) {

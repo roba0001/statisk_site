@@ -84,8 +84,8 @@ nav a:hover {
 }
 
 /* -----------------PRODUKTLISTE----------------- */
-.productlist article.soldOut img {
-  opacity: 0.3;
+.soldOut_img {
+  opacity: 0.2;
   padding: 5px;
 }
 
@@ -104,6 +104,16 @@ article a {
 }
 article a:hover {
   text-decoration: underline;
+}
+
+/* sold out */
+.soldout_box {
+  position: absolute;
+  color: #f0f0ee;
+  background: rgb(0, 0, 0);
+  padding: 7px 10px;
+  margin: 10px 10px;
+  z-index: 2;
 }
 
 /* ---------------------------------------------- */

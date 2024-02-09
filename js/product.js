@@ -17,3 +17,8 @@ function showProduct(product) {
   document.querySelector(".info h1").textContent = product.brandname;
   document.querySelector(".info p").textContent = product.brandbio;
 }
+
+if (product.soldout) {
+  // produktet er udsolgt
+  copy.querySelector("article").classList.add("soldOut");
+}
